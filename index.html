@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Draw better.io</title>
+  </head>
+  <body>
+    <div class="shapes">
+      <button class="spawnSquare"><i class="fa-solid fa-square"></i></button>
+      <button class="spawnRectangle"><div class="rectangle"></div></button>
+      <button class="spawnCircle"><i class="fa-solid fa-circle"></i></button>
+      <button class="spawnEllipse"><div class="elipse"></div></button>
+      <button class="spawnTextBox"><i class="fa-solid fa-comment"></i></button>
+
+      <input type="color" id="strokeColor" value="#191A1A" />
+      <input type="color" id="fillColor" value="#DAD7D7" />
+      <ul>
+        <span class>Police</span>
+        <ul class="fontMenu">
+          <li>
+            <button class="fontChoice" id="arial" value="arial">arial</button>
+          </li>
+          <li>
+            <button class="fontChoice" id="roboto" value="roboto">
+              roboto
+            </button>
+          </li>
+          <li>
+            <button class="fontChoice" id="Oswald" value="Oswald">
+              Oswald
+            </button>
+          </li>
+        </ul>
+      </ul>
+    </div>
+    <div class="fonction">
+      <button class="screenshot"><i class="fa-solid fa-camera"></i></button>
+      <button class="save"><i class="fa-solid fa-floppy-disk"></i></button>
+      <button class="Reset"><i class="fa-solid fa-trash"></i></button>
+    </div>
+
+    <div class="suppButton">
+      <button class="closeCanvas">
+        <i class="fa-solid fa-square-xmark"></i>
+      </button>
+      <button class="download"><i class="fa-solid fa-download"></i></button>
+      <button class="PNG"><i class="fa-solid fa-file-arrow-down"></i></button>
+    </div>
+    <img
+      src=""
+      id="imgConverted"
+      style="float: left; border: 2px solid black; margin-left: 2px"
+    />
+
+    <div id="capture" class="screenshotable"></div>
+    <script src="./draw.js"></script>
+
+    <script src="html2canvas.min.js"></script>
+  </body>
+</html>
